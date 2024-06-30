@@ -1,0 +1,19 @@
+
+.custom-carousel .control-dots {
+    bottom: 20px; /* Adjust the position of the control dots */
+  }
+  
+  .custom-carousel .control-dots .dot {
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: rgba(255, 255, 255, 0.5); /* Customize background color */
+    box-shadow: none; /* Remove any box-shadow */
+    margin: 0 5px; /* Adjust spacing between dots */
+    transition: background-color 0.3s ease; /* Optional: Add transition effect */
+  }
+  
+  .custom-carousel .control-dots .dot.selected {
+    background-color: rgba(255, 255, 255, 1); /* Customize selected dot color */
+  }
+  

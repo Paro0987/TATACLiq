@@ -1,0 +1,731 @@
+body{
+    margin:0px 0;
+}
+
+/* Header Section Navbar basic container styles */
+#navContainer{
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    display: flex;
+    font-family: sans-serif;
+    position:sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+#navContainer > div:nth-child(1){
+    width:6%;
+}
+#blockshowCat,#blockshow{
+  background-color: white;;
+}
+
+
+/* Navbar Section Area */
+#navContainer > div:nth-child(2){
+    width:88%;
+}
+/* ********************** */
+
+
+
+#navContainer > div:nth-child(3){
+    width:6%;
+}
+
+#navContainer > div:nth-child(3)>div{
+    width:100%;
+    height: 40px;
+    background-color: #000;
+}
+
+
+/* Navbar Middle Section style */
+.navMiddle{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* Navbar logo section */
+.logoHolder{
+    width:6.5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoHolder>img{
+    width: 100%;
+    height:fit-content;
+    /* width:fit-content */
+}
+.logoHolder>img:hover{
+  transform:none;
+  
+}
+
+
+/* *********Logo Section Ends here************ */
+
+
+
+
+/* Navbar Middle division into 2 section */
+.navFunctHolder{
+    width:84.5%;
+}
+.navFunctHolder>div:nth-child(1){   
+    background-color: #000;
+    height: 40px;
+}
+
+.navFunctHolder>div:nth-child(2){
+    width: 100%;
+    height: 60px;
+}
+
+
+
+
+/* Top Middle Section Navbar STARTS here*/
+.topMiddleSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.topMiddleSection>div:nth-child(1){
+    width:15%;
+    padding-left: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.topMiddleSection_Menu{
+    display: flex;
+    width: 46%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: white;
+}
+
+.topMenu{
+  color: white;
+  text-decoration: none;
+}
+.topMenu:hover{
+  color:white
+}
+/* Top Middle Section Navbar ENDS here */
+
+
+
+
+/*********************** SignIn / SignUp Section **********************/
+
+#popMobileDiv{
+  margin-top:5px;
+}
+
+
+#popDisplay {
+  background-color: #ff1744;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#popIcon {
+  margin-right: 10px;
+}
+
+#arrow {
+  margin-top: 33px;
+  background-color: white;
+  content: "   ";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  z-index: 3;
+  border: none;
+  margin-left: 130px;
+  transform: rotate(225deg);
+  /* display: none; */
+}
+
+#boxhov {
+  margin-top: -10px;
+  width: 300px;
+  /* padding: 50px; */
+  position: absolute;
+  margin-left: 405px;
+  z-index: 3;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#dummy:hover + #boxhov,
+#boxhov:hover {
+  display: block;
+}
+
+/*********************** SignIn / SignUp Section ENDS here ************************/
+
+
+
+
+/* bottom Middle Section Navbar */
+.bottomMiddleSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottomMiddleSection>div:nth-child(1){
+    width: 25.5%;
+    height: 60px;
+    display:flex;
+    color: white;
+}
+
+
+
+/* Categories and Brands Style Section  */
+
+.navbarArrowDown{
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+
+
+/********** Search Section ********/
+.bottomMiddleSection>div:nth-child(2){
+    width: 63.5%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* border:1px solid red */
+}
+
+.bottomMiddleSection>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    color: #a0a0a0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4a4a4a;
+    /* border:1px solid white */
+}
+
+.bottomMiddleSection>div:nth-child(2)>div>div:nth-child(1){
+    width: 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.bottomMiddleSection>div:nth-child(2)>div>div:nth-child(2){
+    width: 97%;
+    height: 40px;
+}
+
+.bottomMiddleSection input{
+    background-color: #4a4a4a;
+    color: #a0a0a0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 97%;
+    height:38px;
+    /* border:1px solid teal; */
+    float:right
+}
+
+.bottomMiddleSection input:focus{
+    outline: none;
+}
+
+/************ Search Section ENDS here ***********/
+
+
+
+/*************** Bookmark and Bag Section Style  ***********/
+.bottomMiddleSection>div:nth-child(3){
+    width: 11%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.bottomMiddleSection>div:nth-child(3)>div{
+    width:50%;
+    padding-left: 20%;
+    cursor: pointer;
+}
+
+
+/****************** Categories Dropdown styling STARTS here **************************/
+.dropbtn {
+    width:50%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: block;
+    width:50%;
+    height: 100%;
+    font-size: 18px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 14px 16px 0px 16px;
+    text-align: left;
+    width:970px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  
+
+  .dropdown-content a {
+    color: grey;
+    padding: 6px 0px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* .dropdown-content a:hover{
+    color: red !important;
+  } */
+#listCat{
+  font-size:18px;
+}
+  #listCat a{
+    padding:11px 0px;
+    font-size: 15px;
+  }
+
+  #cateTable a:hover{
+    color: red !important;
+  }
+
+  #brandTable a:hover{
+    color: red !important;
+  }
+
+  hr{
+    margin:8px 0px;
+    color:black
+  }
+  
+  .dropdown-content a:hover {color: #000;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {
+    background-color: #fff;
+    width:fit-content;
+    padding-right: 10px;
+    height: 100%;
+    color: #000;
+  }
+
+  #listCat span{
+    float: right;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  /***************** Categories Dropdown styling ENDS here *******************/
+
+
+  /* Right side Menu items in Category Section */
+  .dropdown-content > div {
+    display: flex;
+    /* position: absolute; */
+    background-color: #f1f1f1;
+    padding: 14px 16px;
+    justify-content: space-between;
+    /* width: 100%; */
+    
+  }
+
+  .dropdown-content > div > div:nth-child(1){
+    width: 20%;
+  }
+
+  .dropdown-content > div > div:nth-child(2){
+    width: 75%;
+  }
+
+
+/* ***************************************************** */
+
+/****************** Brands Dropdown styling STARTS here **************************/
+.dropbtn_Br {
+  width:50%;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown_Br {
+  position: relative;
+  display: block;
+  width:50%;
+  height: 100%;
+  font-size: 18px;
+}
+
+.dropdown-content_Br {
+  display: none;
+  position: absolute;
+  padding: 14px 16px 0px 16px;
+  background-color: white;
+  text-align: left;
+  width:900px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content_Br a {
+  color: grey;
+  padding: 6px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+#listBrand a{
+  padding:11px 0px;
+  font-size: 15px;
+}
+
+.dropdown-content_Br a:hover {color: #000;}
+
+.dropdown_Br:hover .dropdown-content_Br {display: block;}
+
+.dropdown_Br:hover .dropbtn_Br {
+  background-color: #fff;
+  width:fit-content;
+  padding-right: 10px;
+  height: 100%;
+  color: #000;
+}
+
+#listBrand span{
+  float: right;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/***************** Brand Dropdown styling ENDS here *******************/
+
+
+/* Right side Menu items in Brand Section */
+.dropdown-content_Br > div {
+  display: flex;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  /* padding: 14px 16px; */
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.dropdown-content_Br > div > div:nth-child(1){
+  width: 20%;
+  padding: 14px 20px;
+}
+
+.dropdown-content_Br > div > div:nth-child(2){
+  width: 45%;
+  padding: 14px 16px;
+}
+
+.dropdown-content_Br > div > div:nth-child(3){
+  width: 35%;
+  background-color: #dbd9d9;
+}
+
+
+/* ****************************************************** */
+
+#cateTable, #brandTable{
+  width: 100%;
+  font-size:14px;
+}
+
+
+#imgList>div{
+  display:flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#imgList img{
+  border-radius: 50%;
+  cursor: pointer;
+  height:fit-content;
+  /* width:fit-content */
+}
+#imgList img:hover{
+  transform: none;
+}
+  
+
+/***************** Login/Register Section ******************/
+
+/* .loginBtn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+} */
+
+.loginDropdown {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.loginDropdown-content {
+  display: none;
+  position: absolute;
+  right:0;
+  top: 28px;
+  background-color: #f1f1f1;
+  padding: 14px 20px;
+  text-align: left;
+  min-width:180px;
+  line-height: 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* .loginDropdown-content a {
+  color: black;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: block;
+} */
+
+.loginDropdown-content a:hover {color: #000; cursor: pointer; }
+
+.loginDropdown:hover .loginDropdown-content {
+  display: block;
+  
+}
+
+/* .loginDropdown:hover .loginBtn {
+  background-color: #fff;
+  width:max-content;
+  padding-right: 10px;
+  height: 100%;
+  color: #000;
+} */
+
+.loginDropdown-content  a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+#loginBtn{
+  border: none;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 16px;
+  margin-bottom:10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.loginDropdown-content span{
+  position:absolute; 
+  top: -9px; 
+  right: 25px; 
+  font-size: 30px; 
+  color: #f1f1f1;
+}
+
+
+/******************* SignIn / SignUp Window style *********************/
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.66);
+}
+
+.overlay-content {
+  position: relative;
+  /* top: 25%; */
+  padding-top: 85px;
+  width: 35%;
+  height: 95vh;
+  text-align: center;
+  color: #000;
+  margin: auto;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 40px;
+}
+
+
+
+.overlay-content > h1{
+  font-size: 32px;
+  font-family: 700;
+  color: #212121;
+  margin: 0;
+}
+
+.inputMobile{
+  color: #9d9e9f;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.numberInput{
+  display: flex;
+  margin: auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  width: 70%;
+  height: 40px;
+  margin-top: 35px;
+  align-items: center;
+}
+
+.overlay-content > div > div > div:nth-child(1){
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.numberInput > div:last-child{
+  width: 100%;
+}
+
+.overlay-content > div > div input{
+  height: 38px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.overlay-content input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.overlay-content h3{
+  color:#da1c5c;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  width: 40%;
+  font-size:16px;
+  font-weight:bold;
+  /* border:1px solid red */
+}
+.termPolicy{
+  color:#da1c5c;
+  margin:0px 0px 30px;
+  font-weight: 700;
+}
+
+#term{
+  width: 70%;
+  margin: auto;
+  font-size: 12px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.overlay-content button{
+  width: 70%;
+  border-radius: 15px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: 0px;
+  margin-top: 15px;
+  outline: none;
+  padding: 13px 15px;
+  /* background-image: linear-gradient(to right bottom, rgb(137, 33, 107), rgb(218, 68, 83));
+  box-shadow: rgb(218 68 83) 0px 28px 18px -23px; */
+  cursor: pointer;
+}
+
+
+/**************** SignIn / SignUP window style ENDS here *********************/
+
+
+
+#popEmailDiv{
+  display: none;
+}
+
+.otpResend{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  color:#da1c5c;
+  font-weight: 400;
+  margin: auto;
+}
+
+
+.otpResend p{
+  cursor: pointer;
+}
+
+#popOtpBtn{
+  margin-top: 80px;
+}
