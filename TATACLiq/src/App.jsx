@@ -13,11 +13,16 @@ const App = () => {
   const [groupedProducts, setGroupedProducts] = useState({});
 
   useEffect(() => {
-    axios.get('/data/products.json')
+    axios.get('/product.json') 
       .then(response => {
-        setProducts(response.data);
-        console.log('Fetched products:', response.data);
-        groupProducts(response.data);
+        const data = response.data;
+        if (Array.isArray(data.products)) {
+          setProducts(data.products);
+          console.log('Fetched products:', data.products);
+          groupProducts(data.products);
+        } else {
+          console.error('Expected an array of products but received:', data);
+        }
       })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
@@ -25,10 +30,12 @@ const App = () => {
   const groupProducts = (products) => {
     const grouped = products.reduce((acc, product) => {
       const { department } = product;
-      if (!acc[department]) {
-        acc[department] = [];
+      if (department) {
+        if (!acc[department]) {
+          acc[department] = [];
+        }
+        acc[department].push(product);
       }
-      acc[department].push(product);
       return acc;
     }, {});
     setGroupedProducts(grouped);

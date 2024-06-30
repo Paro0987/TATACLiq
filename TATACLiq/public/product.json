@@ -1,4 +1,5 @@
- [
+{
+    "products": [
       {
       "id": "1",
       "department": "Footwear",
@@ -1695,3 +1696,4 @@
       "product_type": "Womenswear"
     }
   ]
+}  
